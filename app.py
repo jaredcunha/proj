@@ -20,10 +20,6 @@ app = Flask(__name__)
 def data_route():
     return render_template("index-new.html")
 
-@app.route("/buttons")
-def data_route():
-    return render_template("buttons.html")
-
 
 # @app.route("/scrape")
 # def scrape():
