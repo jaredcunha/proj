@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script>
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                title: {
+                    text: "PPP Loan Amounts by VA Congressional District"
+                },
+                data: [{
+                    type: "pie",
+                    startAngle: 240,
+                    yValueFormatString: "$##0\"\"",
+                    indexLabel: "{label} {y}",
+                    dataPoints: [
+                        { 'y': 245123079, 'label': 'VA-01' },
+                        { 'y': 265217455, 'label': 'VA-02' },
+                        { 'y': 190516757, 'label': 'VA-03' },
+                        { 'y': 257982591, 'label': 'VA-04' },
+                        { 'y': 296615520, 'label': 'VA-05' },
+                        { 'y': 243769129, 'label': 'VA-06' },
+                        { 'y': 437968361, 'label': 'VA-07' },
+                        { 'y': 321780571, 'label': 'VA-08' },
+                        { 'y': 187991464, 'label': 'VA-09' },
+                        { 'y': 551924420, 'label': 'VA-10' },
+                        { 'y': 359333838, 'label': 'VA-11' }
+                    ]
+                }]
+            });
+            chart.render();
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="chartContainer" style="height: 400px; width: 125%;"></div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+
+</html>

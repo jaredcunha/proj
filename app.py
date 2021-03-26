@@ -1,6 +1,5 @@
 from flask import Flask, render_template, redirect, url_for
 from flask_pymongo import PyMongo
-import scraping
 
 app = Flask(__name__)
 
@@ -18,7 +17,7 @@ app = Flask(__name__)
 
 @app.route("/data")
 def data_route():
-    return render_template("index-new.html")
+    return render_template("index.html")
 
 
 # @app.route("/scrape")
