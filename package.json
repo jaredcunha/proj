@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Pete803/Project3/issues"
   },
-  "homepage": "https://github.com/Pete803/Project3#readme"
+  "homepage": "https://github.com/Pete803/Project3#readme",
+  "devDependencies": {
+    "flask": "^0.2.10"
+  }
 }
