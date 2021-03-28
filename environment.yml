@@ -2,4 +2,5 @@ dependencies:
   - python=3.6
   - pip:
     - flask
+    - flask_pymongo
     - gunicorn # for app deployment
